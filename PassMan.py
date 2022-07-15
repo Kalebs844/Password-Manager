@@ -25,9 +25,9 @@ except:
 
 #Password Hashing
 def hashpass(pswd):
-	setpass = bytes(pswd, 'utf-8')                                                #Convert string to UTF-8 byte
-	hash_obj = hashlib.md5(setpass)                                               #Setting password to be MD5 
-	md5hash = hash_obj.hexdigest()                                                #Converting to MD5
+	setpass = bytes(pswd, 'utf-8')                                               
+	hash_obj = hashlib.md5(setpass)                                                
+	md5hash = hash_obj.hexdigest()                                                
 	return md5hash
 
 #Auth
